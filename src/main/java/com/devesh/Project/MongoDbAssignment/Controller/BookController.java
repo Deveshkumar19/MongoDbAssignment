@@ -33,6 +33,9 @@ public class BookController {
         bookService.bulkInsert(lstBook);
     }
 
+    /**
+     * @param lstBook 
+     */
     @RequestMapping (value="/insertBookThread", method=RequestMethod.POST)
     public void insertBookInThread(@RequestBody List<Book> lstBook)  {
         System.out.println("inside");
